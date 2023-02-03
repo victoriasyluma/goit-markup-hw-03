@@ -89,7 +89,6 @@ header.main-header li a:hover {
 .main-page {
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 94px;
 }
 .main-page-text {
   color: var(--text-white-color);
@@ -142,12 +141,15 @@ header.main-header li a:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.work-example {
+  padding-bottom: 92px;
+  padding-top: 45px;
+}
 .work-example .work-example-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 92px;
 }
 .our-team .our-team-title {
   font-size: 36px;
@@ -197,12 +199,11 @@ header.main-header li a:hover {
   background-color: var(--grey-color-buttons);
   border: none;
   border-radius: 4px;
-  width: 112px;
-  height: 38px;
   color: var(--text-black-color);
   cursor: pointer;
   font-size: 16px;
   line-height: calc(26 / 16);
+  padding: 8px 22px;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -277,7 +278,7 @@ header.main-header li a:hover {
   justify-content: space-between;
 }
 .section-advantage {
-  margin-bottom: 45px;
+  padding-top: 94px;
 }
 .text-aling {
   text-align: center;
@@ -322,9 +323,6 @@ footer .logo {
   gap: 8px;
   margin-bottom: 54px;
 }
-.header-portfolio {
-  margin-bottom: 94px;
-}
 .our-examples {
   display: flex;
   flex-wrap: wrap;
@@ -334,5 +332,6 @@ footer .logo {
   border: 1px solid #eeeeee;
 }
 .main-buttons-portfolio {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }

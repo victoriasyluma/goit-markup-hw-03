@@ -23,26 +23,32 @@
     <header class="main-header">
       <div class="container container-flex main-header-container">
         <nav class="flex-center-items flex-1">
-          <a class="logo font-700" href="./index.html"
+          <a class="address-links logo font-700" href="./index.html"
             ><span class="span-blue">Web</span>Studio</a
           >
           <ul class="list-style-none flex-center-items">
             <li class="nav-li">
               <a
-                class="link-nav main-header-links span-blue"
+                class="address-links link-nav main-header-links span-blue padding-32px"
                 href="./index.html"
                 >Студія</a
               >
             </li>
 
             <li class="nav-li">
-              <a class="link-nav main-header-links" href="./portfolio.html"
+              <a
+                class="address-links link-nav main-header-links padding-32px"
+                href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
 
             <li class="nav-li">
-              <a class="link-nav main-header-links" href="">Контакти</a>
+              <a
+                class="address-links link-nav main-header-links padding-32px"
+                href=""
+                >Контакти</a
+              >
             </li>
           </ul>
         </nav>
@@ -52,14 +58,14 @@
         <ul class="list-style-none flex-center-items auth-nav">
           <li class="item">
             <a
-              class="link-nav email-header main-header-links"
+              class="link-nav email-header main-header-links padding-32px"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="item">
             <a
-              class="link-nav tel-header main-header-links"
+              class="link-nav tel-header main-header-links padding-32px"
               href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -82,33 +88,33 @@
 
       <!--our advantage-->
 
-      <section class="section-advantage">
+      <section class="section-advantage section">
         <div class="container">
           <h2 class="title-hide">Наші принципи</h2>
           <ul
             class="flex list-style-none main-section-list main-section-list-card"
           >
-            <li>
+            <li class="w-270px">
               <h2 class="main-section-list-title">УВАГА ДО ДЕТАЛЕЙ</h2>
               <p class="main-section-list-paragraph">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="w-270px">
               <h2 class="main-section-list-title">ПУНКТУАЛЬНІСТЬ</h2>
               <p class="main-section-list-paragraph">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="w-270px">
               <h2 class="main-section-list-title">ПЛАНУВАННЯ</h2>
               <p class="main-section-list-paragraph">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="w-270px">
               <h2 class="main-section-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
               <p class="main-section-list-paragraph">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -121,58 +127,86 @@
 
       <!--What we are doing?-->
 
-      <section class="work-example">
+      <section class="section padding-top-0px">
         <div class="container">
           <h2 class="work-example-title text-black-color text-aling">
             Чим ми займаємося
           </h2>
           <ul class="flex list-style-none work-example-list">
-            <li>
+            <li class="w-370px">
               <img
+                class="img-block"
                 src="./images/img_1.jpg"
                 alt="Десктопні додатки, мобільні додатки та дизайнерські рішення"
               />
             </li>
-            <li>
+            <li class="w-370px">
               <img
+                class="img-block"
                 src="./images/img_2.jpg"
                 alt="розробліємо інтерфейс додатку"
               />
             </li>
-            <li><img src="./images/img_3.jpg" alt="дизайн додатку" /></li>
+            <li class="w-370px">
+              <img
+                class="img-block"
+                src="./images/img_3.jpg"
+                alt="дизайн додатку"
+              />
+            </li>
           </ul>
         </div>
       </section>
 
       <!--our team-->
 
-      <section class="our-team backgroud-color">
+      <section class="section our-team backgroud-color">
         <div class="container">
           <h2 class="our-team-title font-700 text-black-color">Наша команда</h2>
           <ul class="list-style-none flex just-cont-sp">
-            <li class="team-card">
-              <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270" />
-              <h3 class="our-team-names">Ігор Дем'яненко</h3>
-              <p lang="en" class="our-team-position">Product Designer</p>
-            </li>
-            <li class="team-card">
-              <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="270" />
-              <h3 class="our-team-names">Ольга Рєпіна</h3>
-              <p lang="en" class="our-team-position">Frontend Developer</p>
-            </li>
-            <li class="team-card">
-              <img src="./images/mucola.jpg" alt="Микола Тарасов" width="270" />
-              <h3 class="our-team-names">Микола Тарасов</h3>
-              <p lang="en" class="our-team-position">Marketing</p>
-            </li>
-            <li class="team-card">
+            <li class="team-card w-270px">
               <img
+                class="mb-30px img-block"
+                src="./images/igor.jpg"
+                alt="Ігор Дем'яненко"
+                width="270"
+              />
+              <h3 class="our-team-names">Ігор Дем'яненко</h3>
+              <p lang="en" class="our-team-position mb-30px">
+                Product Designer
+              </p>
+            </li>
+            <li class="team-card w-270px">
+              <img
+                class="mb-30px img-block"
+                src="./images/olga.jpg"
+                alt="Ольга Рєпіна"
+                width="270"
+              />
+              <h3 class="our-team-names">Ольга Рєпіна</h3>
+              <p lang="en" class="our-team-position mb-30px">
+                Frontend Developer
+              </p>
+            </li>
+            <li class="team-card w-270px">
+              <img
+                class="mb-30px img-block"
+                src="./images/mucola.jpg"
+                alt="Микола Тарасов"
+                width="270"
+              />
+              <h3 class="our-team-names">Микола Тарасов</h3>
+              <p lang="en" class="our-team-position mb-30px">Marketing</p>
+            </li>
+            <li class="team-card w-270px">
+              <img
+                class="mb-30px img-block"
                 src="./images/mihail.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
               />
               <h3 class="our-team-names">Михайло Єрмаков</h3>
-              <p lang="en" class="our-team-position">UI Designer</p>
+              <p lang="en" class="our-team-position mb-30px">UI Designer</p>
             </li>
           </ul>
         </div>
@@ -181,13 +215,13 @@
 
     <!--Contact information-->
 
-    <footer class="footer">
-      <div class="container padding-60px">
+    <footer class="footer padding-60px">
+      <div class="container">
         <a class="logo" href=""><span class="span-blue">Web</span>Studio </a>
 
         <address class="footer-address">
           <ul class="list-style-none">
-            <li class="team">
+            <li class="item-footer">
               <a
                 class="address-links text-white-color"
                 href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4270183,30.5396073,3a,75y,240.65h,90t/data=!3m4!1e1!3m2!1smcVtNysL1uE3tpJzUcDMwA!2e0!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjeqsyV_9P8AhXHl4sKHWf-DNIQxB16BAgYEAM"
@@ -195,7 +229,7 @@
               >
             </li>
 
-            <li class="item">
+            <li class="item-footer">
               <a
                 class="address-links text-white-color opasity-whit-60"
                 href="emailto:info@devstudio.com"
@@ -203,7 +237,7 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="item-footer">
               <a
                 class="address-links text-white-color opasity-whit-60"
                 href="tel:+380961111111"

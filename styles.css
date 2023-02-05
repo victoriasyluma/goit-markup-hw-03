@@ -15,15 +15,21 @@ html {
   font-family: var(--main-font-family);
   background-color: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
 .flex-center-items {
   display: flex;
   align-items: center;
 }
 .flex-1 {
   flex: 1;
-}
-.font-700 {
-  font-weight: 700;
 }
 .font-400 {
   font-weight: 400;
@@ -41,6 +47,8 @@ html {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 header.main-header {
   border-bottom: 0.5px solid lightgray;
@@ -70,11 +78,6 @@ header.main-header .logo {
 .item:not(:last-child) {
   margin-right: 50px;
 }
-.link-nav {
-  display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
-}
 .main-header-links {
   text-decoration: none;
   color: var(--text-black-color);
@@ -89,6 +92,8 @@ header.main-header li a:hover {
 .main-page {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-page-text {
   color: var(--text-white-color);
@@ -98,8 +103,6 @@ header.main-header li a:hover {
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -141,15 +144,12 @@ header.main-header li a:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.work-example {
-  padding-bottom: 92px;
-  padding-top: 45px;
-}
-.work-example .work-example-title {
+.work-example-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 .our-team .our-team-title {
   font-size: 36px;
@@ -160,19 +160,21 @@ header.main-header li a:hover {
 }
 .our-team .our-team-names {
   color: var(--text-black-color);
-  font-size: 19px;
-  line-height: calc(19 / 19);
+  font-size: 16px;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .our-team .our-team-position {
   color: var(--text-grey-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(16 / 16);
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0px;
 }
 .footer {
   background-color: var(--main-background-darkblue);
@@ -211,6 +213,9 @@ header.main-header li a:hover {
 .portfolio-button:focus {
   background-color: var(--text-link-color);
   color: var(--text-white-color);
+  box-shadow: 0px 2px 2px 0px #0000001f;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  box-shadow: 0px 3px 1px 0px #0000001a;
 }
 .img-title {
   font-weight: 700;
@@ -255,10 +260,6 @@ header.main-header li a:hover {
 .main-header-container {
   height: 80px;
 }
-.hero-container {
-  background-color: var(--main-background-darkblue);
-  min-height: 600px;
-}
 .title-hide {
   margin-top: 0;
   margin-bottom: 0;
@@ -274,7 +275,6 @@ header.main-header li a:hover {
 }
 .work-example-list {
   margin-top: 0;
-  margin-bottom: 94px;
   justify-content: space-between;
 }
 .section-advantage {
@@ -293,7 +293,7 @@ header.main-header li a:hover {
 footer .logo {
   margin-bottom: 20px;
 }
-.footer-address .item:not(:last-child) {
+.item-footer:not(:last-child) {
   margin-bottom: 9px;
 }
 .just-cont-sp {
@@ -308,10 +308,6 @@ footer .logo {
 .team-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .container-portfolio {
   max-width: 1200px;
@@ -328,10 +324,44 @@ footer .logo {
   flex-wrap: wrap;
   gap: 30px;
 }
-.list-element {
-  border: 1px solid #eeeeee;
-}
 .main-buttons-portfolio {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+.padding-32px {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.padding-top-0px {
+  padding-top: 0px;
+}
+.mb-30px {
+  margin-bottom: 30px;
+}
+.img-block {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.h2-p {
+  margin: 20px 24px;
+}
+.list-element {
+  width: 370px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.w-270px {
+  width: 270px;
+}
+.w-370px {
+  width: 370px;
 }

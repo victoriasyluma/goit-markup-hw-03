@@ -17,6 +17,16 @@ html {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
 @media screen and (min-width: 900px) {
   header.main-header {
   }
@@ -29,10 +39,6 @@ html {
 
 .flex-1 {
   flex: 1;
-}
-
-.font-700 {
-  font-weight: 700;
 }
 
 .font-400 {
@@ -54,11 +60,9 @@ html {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-
-// .margin-right-215 {
-//   margin-right: 215px;
-// }
 
 header.main-header {
   //   display: flex;
@@ -100,11 +104,6 @@ header.main-header {
   margin-right: 50px;
 }
 
-.link-nav {
-  display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
-}
 .main-header-links {
   text-decoration: none;
   color: var(--text-black-color);
@@ -121,7 +120,8 @@ header.main-header li a:hover {
 .main-page {
   background-color: #2f303a;
   text-align: center;
-  //   margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-page-text {
@@ -132,8 +132,6 @@ header.main-header li a:hover {
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -181,16 +179,12 @@ header.main-header li a:hover {
   }
 }
 
-.work-example {
-  padding-bottom: 92px;
-  padding-top: 45px;
-
-  .work-example-title {
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    letter-spacing: 0.03em;
-    margin-top: 0;
-  }
+.work-example-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .our-team {
@@ -205,20 +199,22 @@ header.main-header li a:hover {
   .our-team-names {
     color: var(--text-black-color);
     text-align: center;
-    font-size: 19px;
-    line-height: calc(19 / 19);
+    font-size: 16px;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     font-weight: 500;
+    margin-bottom: 10px;
   }
   .our-team-position {
     text-align: center;
     color: var(--text-grey-color);
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(16 / 16);
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0px;
   }
 }
 
@@ -267,6 +263,9 @@ header.main-header li a:hover {
   &:focus {
     background-color: var(--text-link-color);
     color: var(--text-white-color);
+    box-shadow: 0px 2px 2px 0px #0000001f;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001a;
   }
 }
 
@@ -326,11 +325,6 @@ header.main-header li a:hover {
   height: 80px;
 }
 
-.hero-container {
-  background-color: var(--main-background-darkblue);
-  min-height: 600px;
-}
-
 // <!--removing title-->
 
 .title-hide {
@@ -351,7 +345,6 @@ header.main-header li a:hover {
 
 .work-example-list {
   margin-top: 0;
-  margin-bottom: 94px;
   justify-content: space-between;
 }
 
@@ -377,7 +370,7 @@ footer .logo {
   margin-bottom: 20px;
 }
 
-.footer-address .item:not(:last-child) {
+.item-footer:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -397,11 +390,6 @@ footer .logo {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .container-portfolio {
@@ -424,11 +412,54 @@ footer .logo {
   gap: 30px;
 }
 
-.list-element {
-  border: 1px solid #eeeeee;
-}
-
 .main-buttons-portfolio {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+.padding-32px {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.padding-top-0px {
+  padding-top: 0px;
+}
+
+.mb-30px {
+  margin-bottom: 30px;
+}
+
+.img-block {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.h2-p {
+  margin: 20px 24px;
+}
+
+.list-element {
+  width: 370px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.w-270px {
+  width: 270px;
+}
+
+.w-370px {
+  width: 370px;
 }

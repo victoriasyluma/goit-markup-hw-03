@@ -113,9 +113,9 @@ header.main-header {
   letter-spacing: 0.02em;
 }
 
-header.main-header li a:hover {
-  color: var(--text-link-color);
-}
+// header.main-header li a:hover {
+//   color: var(--text-link-color);
+// }
 
 .main-page {
   background-color: #2f303a;
@@ -238,6 +238,8 @@ header.main-header li a:hover {
     letter-spacing: 0.03em;
   }
 }
+
+// hover,focus
 
 .address-links {
   &:hover,
@@ -367,7 +369,8 @@ header.main-header li a:hover {
 }
 
 footer .logo {
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .item-footer:not(:last-child) {
@@ -442,14 +445,18 @@ footer .logo {
 }
 
 .h2-p {
-  margin: 20px 24px;
-}
-
-.list-element {
+  padding: 20px 24px;
   width: 370px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.list-element {
+  //   width: 370px;
+  //   border-left: 1px solid #eeeeee;
+  //   border-right: 1px solid #eeeeee;
+  //   border-bottom: 1px solid #eeeeee;
 }
 
 .mb-4 {
@@ -462,4 +469,8 @@ footer .logo {
 
 .w-370px {
   width: 370px;
+}
+
+.block {
+  display: block;
 }
